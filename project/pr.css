@@ -1,0 +1,383 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #link{
+        text-align: right;
+    }
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      text-align: right;
+      justify-content: right;
+    }
+
+    .nav-links li a {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .signup-btn {
+      background: black;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 50px;
+      background: #f8f9f9;
+      border-radius: 15px;
+      margin: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .highlight {
+      background: #f8e26f;
+      padding: 0 6px;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .btn {
+      background: black;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Brand Logos */
+    .brands {
+      background: #f0db65;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .brands img {
+      max-width: 120px;
+      transition: transform 0.3s ease;
+    }
+
+    .brands img:hover {
+      transform: scale(1.1);
+    }
+
+    /* New Arrivals */
+    .arrivals {
+      padding: 50px;
+    }
+
+    .arrivals h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .arrival-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 250px;
+      background: #fff;
+      border-radius: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: gray;
+      margin-bottom: 10px;
+    }
+
+    /* Promo Section */
+    .promo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f0db65;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+
+    .promo img {
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .promo-text {
+      max-width: 400px;
+    }
+
+    .promo-text h2 {
+      font-size: 40px;
+      font-weight: 900;
+    }
+
+    .promo-text p {
+      margin: 15px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Young's Favourite */
+    .favourite {
+      padding: 50px;
+    }
+
+    .favourite h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .fav-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .fav-card {
+      flex: 1;
+      min-width: 250px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .fav-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .fav-card h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+
+    .fav-card p {
+      font-size: 12px;
+      color: gray;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      background: #f0db65;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .newsletter h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .newsletter p {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .newsletter input {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: black;
+      color: white;
+      padding: 40px 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      max-width: 250px;
+    }
+
+    .footer-left p {
+      font-size: 13px;
+      margin: 10px 0;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons a {
+      background: #f0db65;
+      color: black;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 14px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links ul li {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .footer-links ul li:first-child {
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .promo {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      .promo-text h2 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 28px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+      }
+
+      .newsletter input {
+        width: 180px;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
